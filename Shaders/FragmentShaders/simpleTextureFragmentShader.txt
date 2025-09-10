@@ -1,0 +1,11 @@
+#version 330 core
+
+in vec2 TexCoords;
+
+uniform sampler2D image;
+
+void main(){
+	gl_FragColor = texture(image, TexCoords);
+	//gl_FragColor = vec4(TexCoords, 0.0, 1.0);
+		
+}
